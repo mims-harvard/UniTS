@@ -1,0 +1,534 @@
+task_dataset:
+  NN5_p112:
+    task_name: pretrain_long_term_forecast
+    dataset_name: nn5_daily_without_missing
+    dataset: NN5
+    data: gluonts
+    root_path: ../dataset/gluonts
+    seq_len: 224
+    label_len: 0
+    pred_len: 0
+    features: M
+    embed: timeF
+    enc_in: 111
+    dec_in: 111
+    c_out: 111
+
+  LTF_ECL_p96:
+    task_name: pretrain_long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 192
+    label_len: 48
+    pred_len: 0
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ECL_p192:
+    task_name: pretrain_long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 288
+    label_len: 48
+    pred_len: 0
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ECL_p336:
+    task_name: pretrain_long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 432
+    label_len: 48
+    pred_len: 0
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ECL_p720:
+    task_name: pretrain_long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 816
+    label_len: 48
+    pred_len: 0
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ETTh1_p96:
+    task_name: pretrain_long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 192
+    label_len: 48
+    pred_len: 0
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh1_p192:
+    task_name: pretrain_long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 288
+    label_len: 48
+    pred_len: 0
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh1_p336:
+    task_name: pretrain_long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 432
+    label_len: 48
+    pred_len: 0
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh1_p720:
+    task_name: pretrain_long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 816    
+    label_len: 48
+    pred_len: 0
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_Exchange_p192:
+    task_name: pretrain_long_term_forecast
+    dataset: Exchange
+    data: custom
+    embed: timeF
+    root_path: ../dataset/exchange_rate/
+    data_path: exchange_rate.csv
+    features: M
+    seq_len: 288
+    label_len: 48
+    pred_len: 0
+    enc_in: 8
+    dec_in: 8
+    c_out: 8
+
+  LTF_Exchange_p336:
+    task_name: pretrain_long_term_forecast
+    dataset: Exchange
+    data: custom
+    embed: timeF
+    root_path: ../dataset/exchange_rate/
+    data_path: exchange_rate.csv
+    features: M
+    seq_len: 432
+    label_len: 48
+    pred_len: 0
+    enc_in: 8
+    dec_in: 8
+    c_out: 8
+
+  LTF_ILI_p60:
+    task_name: pretrain_long_term_forecast
+    dataset: ILI
+    data: custom
+    embed: timeF
+    root_path: ../dataset/illness/
+    data_path: national_illness.csv
+    features: M
+    seq_len: 96
+    label_len: 18
+    pred_len: 0
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_Traffic_p96:
+    task_name: pretrain_long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 192
+    label_len: 48
+    pred_len: 0
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+
+  LTF_Traffic_p192:
+    task_name: pretrain_long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 288
+    label_len: 48
+    pred_len: 0
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+  
+  LTF_Traffic_p336:
+    task_name: pretrain_long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 432
+    label_len: 48
+    pred_len: 0
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+
+  LTF_Traffic_p720:
+    task_name: pretrain_long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 816
+    label_len: 48
+    pred_len: 0
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+  
+  LTF_Weather_p96:
+    task_name: pretrain_long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 192
+    label_len: 48
+    pred_len: 0
+    enc_in: 21
+    dec_in: 21
+    c_out: 21
+
+  LTF_Weather_p192:
+    task_name: pretrain_long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 288
+    label_len: 48
+    pred_len: 0
+    enc_in: 21
+    dec_in: 21
+    c_out: 21
+
+  LTF_Weather_p336:
+    task_name: pretrain_long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 432
+    label_len: 48
+    pred_len: 0
+    enc_in: 21
+    dec_in: 21
+    c_out: 21
+
+  LTF_Weather_p720:
+    task_name: pretrain_long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 816
+    label_len: 48
+    pred_len: 0
+    enc_in: 21
+    dec_in: 21
+    c_out: 21
+
+  CLS_Heartbeat:
+    task_name: pretrain_classification
+    dataset: Heartbeat
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/Heartbeat/
+    seq_len: 405
+    label_len: 0
+    pred_len: 0
+    enc_in: 61
+    num_class: 2
+    c_out: None
+
+  CLS_JapaneseVowels:
+    task_name: pretrain_classification
+    dataset: JapaneseVowels
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/JapaneseVowels/
+    seq_len: 29
+    label_len: 0
+    pred_len: 0
+    enc_in: 12
+    num_class: 9
+    c_out: None
+
+  CLS_PEMS-SF:
+    task_name: pretrain_classification
+    dataset: PEMS-SF
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/PEMS-SF/
+    seq_len: 144
+    label_len: 0
+    pred_len: 0
+    enc_in: 963
+    num_class: 7
+    c_out: None
+
+  CLS_SelfRegulationSCP2:
+    task_name: pretrain_classification
+    dataset: SelfRegulationSCP2
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/SelfRegulationSCP2/
+    seq_len: 1152
+    label_len: 0
+    pred_len: 0
+    enc_in: 7
+    num_class: 2
+    c_out: None
+
+  CLS_SpokenArabicDigits:
+    task_name: pretrain_classification
+    dataset: SpokenArabicDigits
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/SpokenArabicDigits/
+    seq_len: 93
+    label_len: 0
+    pred_len: 0
+    enc_in: 13
+    num_class: 10
+    c_out: None
+
+  CLS_UWaveGestureLibrary:
+    task_name: pretrain_classification
+    dataset: UWaveGestureLibrary
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UWaveGestureLibrary/
+    seq_len: 315
+    label_len: 0
+    pred_len: 0
+    enc_in: 3
+    num_class: 8
+    c_out: None
+
+  CLS_ECG5000:
+    task_name: pretrain_classification
+    dataset: ECG5000
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/ECG5000
+    seq_len: 140
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 5
+    c_out: None
+
+  CLS_NonInvasiveFetalECGThorax1:
+    task_name: pretrain_classification
+    dataset: NonInvasiveFetalECGThorax1
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/NonInvasiveFetalECGThorax1
+    seq_len: 750
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 52
+    c_out: None
+
+  CLS_Blink:
+    task_name: pretrain_classification
+    dataset: Blink
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/Blink
+    seq_len: 510
+    label_len: 0
+    pred_len: 0
+    enc_in: 4
+    num_class: 2
+    c_out: None
+
+  CLS_FaceDetection:
+    task_name: pretrain_classification
+    dataset: FaceDetection
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/FaceDetection
+    seq_len: 62
+    label_len: 0
+    pred_len: 0
+    enc_in: 144
+    num_class: 2
+    c_out: None
+
+  CLS_ElectricDevices:
+    task_name: pretrain_classification
+    dataset: ElectricDevices
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/ElectricDevices
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 7
+    c_out: None
+
+  CLS_Trace:
+    task_name: pretrain_classification
+    dataset: Trace
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/Trace
+    seq_len: 275
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 4
+    c_out: None
+
+  CLS_FordB:
+    task_name: pretrain_classification
+    dataset: FordB
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/FordB
+    seq_len: 500
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 2
+    c_out: None
+
+  CLS_MotionSenseHAR:
+    task_name: pretrain_classification
+    dataset: MotionSenseHAR
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/MotionSenseHAR
+    seq_len: 200
+    label_len: 0
+    pred_len: 0
+    enc_in: 12
+    num_class: 6
+    c_out: None
+
+  CLS_EMOPain:
+    task_name: pretrain_classification
+    dataset: EMOPain
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/EMOPain
+    seq_len: 180
+    label_len: 0
+    pred_len: 0
+    enc_in: 30
+    num_class: 3
+    c_out: None
+
+  CLS_Chinatown:
+    task_name: pretrain_classification
+    dataset: Chinatown
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/Chinatown
+    seq_len: 24
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 2
+    c_out: None
+
+  CLS_MelbournePedestrian:
+    task_name: pretrain_classification
+    dataset: MelbournePedestrian
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/MelbournePedestrian
+    seq_len: 24
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 10
+    c_out: None
+
+  CLS_SharePriceIncrease:
+    task_name: pretrain_classification
+    dataset: SharePriceIncrease
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/SharePriceIncrease
+    seq_len: 60
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 2
+    c_out: None

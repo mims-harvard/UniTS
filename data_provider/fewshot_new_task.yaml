@@ -1,0 +1,216 @@
+task_dataset:
+
+  CLS_ECG200:
+    task_name: classification
+    dataset: ECG200
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/ECG200
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 2
+    c_out: None
+
+  CLS_Handwriting:
+    task_name: classification
+    dataset: Handwriting
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/Handwriting
+    seq_len: 152
+    label_len: 0
+    pred_len: 0
+    enc_in: 3
+    num_class: 26
+    c_out: None
+
+  CLS_SelfRegulationSCP1:
+    task_name: classification
+    dataset: SelfRegulationSCP1
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/SelfRegulationSCP1
+    seq_len: 896
+    label_len: 0
+    pred_len: 0
+    enc_in: 6
+    num_class: 2
+    c_out: None
+
+
+  CLS_RacketSports:
+    task_name: classification
+    dataset: RacketSports
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UAE/RacketSports
+    seq_len: 30
+    label_len: 0
+    pred_len: 0
+    enc_in: 6
+    num_class: 4
+    c_out: None
+
+  CLS_Epilepsy:
+    task_name: classification
+    dataset: Epilepsy
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UAE/Epilepsy
+    seq_len: 207
+    label_len: 0
+    pred_len: 0
+    enc_in: 3
+    num_class: 4
+    c_out: None
+
+  CLS_StarLightCurves:
+    task_name: classification
+    dataset: StarLightCurves
+    data: UEA
+    embed: timeF
+    root_path: ../dataset/UCR/StarLightCurves
+    seq_len: 1024
+    label_len: 0
+    pred_len: 0
+    enc_in: 1
+    num_class: 3
+    c_out: None
+
+  LTF_ETTh2_p96:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh2_p192:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh2.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh2_p336:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh2.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh2_p720:
+    task_name: long_term_forecast
+    dataset: ETTh2
+    data: ETTh2
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh2.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 720
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_SaugeenRiverFlow:
+    task_name: long_term_forecast
+    dataset_name: saugeenday
+    dataset: SaugeenRiverFlow
+    data: gluonts
+    root_path: ../dataset/gluonts
+    seq_len: 48
+    label_len: 0
+    pred_len: 24
+    features: M
+    embed: timeF
+    enc_in: 1
+    dec_in: 1
+    c_out: 1
+
+  LTF_ETTm1_p96:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p192:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p336:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTm1_p720:
+    task_name: long_term_forecast
+    dataset: ETTm1
+    data: ETTm1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTm1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 720
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+

@@ -1,0 +1,60 @@
+task_dataset:    
+  Solar:
+    task_name: long_term_forecast
+    dataset_name: solar_10_minutes
+    dataset: Solar
+    data: gluonts
+    root_path: ../dataset/gluonts
+    seq_len: 128
+    label_len: 0
+    pred_len: 64
+    features: M
+    embed: timeF
+    enc_in: 137
+    dec_in: 137
+    c_out: 137
+
+  Saugeen_River:
+    task_name: long_term_forecast
+    dataset_name: saugeenday
+    dataset: Saugeen_River
+    data: gluonts
+    root_path: ../dataset/gluonts
+    seq_len: 256
+    label_len: 0
+    pred_len: 128
+    features: M
+    embed: timeF
+    enc_in: 1
+    dec_in: 1
+    c_out: 1
+
+  Hospital:
+    task_name: long_term_forecast
+    dataset_name: hospital
+    dataset: Hospital
+    data: gluonts
+    root_path: ../dataset/gluonts
+    seq_len: 32
+    label_len: 0
+    pred_len: 16
+    features: M
+    embed: timeF
+    enc_in: 767
+    dec_in: 767
+    c_out: 767 
+
+  Web_Traffic:
+    task_name: long_term_forecast
+    dataset_name: kaggle_web_traffic_without_missing
+    dataset: Web_Traffic
+    data: gluonts
+    root_path: ../dataset/gluonts
+    seq_len: 160
+    label_len: 0
+    pred_len: 80
+    features: M
+    embed: timeF
+    enc_in: 500
+    dec_in: 500
+    c_out: 500

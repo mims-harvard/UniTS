@@ -1,0 +1,210 @@
+task_dataset:
+  LTF_ECL_p96:
+    task_name: long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ECL_p192:
+    task_name: long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ECL_p336:
+    task_name: long_term_forecast
+    dataset: ECL
+    data: custom
+    embed: timeF
+    root_path: ../dataset/electricity/
+    data_path: electricity.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 321
+    dec_in: 321
+    c_out: 321
+
+  LTF_ETTh1_p96:
+    task_name: long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh1_p192:
+    task_name: long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_ETTh1_p336:
+    task_name: long_term_forecast
+    dataset: ETTh1
+    data: ETTh1
+    embed: timeF
+    root_path: ../dataset/ETT-small/
+    data_path: ETTh1.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 7
+    dec_in: 7
+    c_out: 7
+
+  LTF_Exchange_p192:
+    task_name: long_term_forecast
+    dataset: Exchange
+    data: custom
+    embed: timeF
+    root_path: ../dataset/exchange_rate/
+    data_path: exchange_rate.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 8
+    dec_in: 8
+    c_out: 8
+
+  LTF_Exchange_p336:
+    task_name: long_term_forecast
+    dataset: Exchange
+    data: custom
+    embed: timeF
+    root_path: ../dataset/exchange_rate/
+    data_path: exchange_rate.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 8
+    dec_in: 8
+    c_out: 8
+
+  LTF_Traffic_p96:
+    task_name: long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+
+  LTF_Traffic_p192:
+    task_name: long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+  
+  LTF_Traffic_p336:
+    task_name: long_term_forecast
+    dataset: Traffic
+    data: custom
+    embed: timeF
+    root_path: ../dataset/traffic/
+    data_path: traffic.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 862
+    dec_in: 862
+    c_out: 862
+  
+  LTF_Weather_p96:
+    task_name: long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 96
+    enc_in: 21
+    dec_in: 21
+    c_out: 21
+
+  LTF_Weather_p192:
+    task_name: long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 192
+    enc_in: 21
+    dec_in: 21
+    c_out: 21
+
+  LTF_Weather_p336:
+    task_name: long_term_forecast
+    dataset: Weather
+    data: custom
+    embed: timeF
+    root_path: ../dataset/weather/
+    data_path: weather.csv
+    features: M
+    seq_len: 96
+    label_len: 48
+    pred_len: 336
+    enc_in: 21
+    dec_in: 21
+    c_out: 21

@@ -1,0 +1,75 @@
+task_dataset:
+  MSL:
+    task_name: anomaly_detection
+    dataset_name: MSL
+    dataset: MSL
+    data: MSL
+    root_path: ../dataset/MSL
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    features: M
+    embed: timeF
+    enc_in: 55
+    dec_in: 55
+    c_out: 55
+
+  PSM:
+    task_name: anomaly_detection
+    dataset_name: PSM
+    dataset: PSM
+    data: PSM
+    root_path: ../dataset/PSM
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    features: M
+    embed: timeF
+    enc_in: 25
+    dec_in: 25
+    c_out: 25
+
+  SMAP:
+    task_name: anomaly_detection
+    dataset_name: SMAP
+    dataset: SMAP
+    data: SMAP
+    root_path: ../dataset/SMAP
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    features: M
+    embed: timeF
+    enc_in: 25
+    dec_in: 25
+    c_out: 25
+
+  SMD:
+    task_name: anomaly_detection
+    dataset_name: SMD
+    dataset: SMD
+    data: SMD
+    root_path: ../dataset/SMD
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    features: M
+    embed: timeF
+    enc_in: 38
+    dec_in: 38
+    c_out: 38
+
+  SWAT:
+    task_name: anomaly_detection
+    dataset_name: SWAT
+    dataset: SWAT
+    data: SWAT
+    root_path: ../dataset/SWaT
+    seq_len: 96
+    label_len: 0
+    pred_len: 0
+    features: M
+    embed: timeF
+    enc_in: 51
+    dec_in: 51
+    c_out: 51
