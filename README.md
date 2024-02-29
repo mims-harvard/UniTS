@@ -103,6 +103,8 @@ bash ./scripts/zero_shot/UniTS_zeroshot_newdata.sh
 ## Use UniTS on your own data.
 UniTS is a highly flexible unified time series model, supporting tasks such as forecasting, classification, imputation, and anomaly detection with a single shared model and shared weights. We provide a [Tutorial](Tutorial.md)  to assist you in using your own data with UniTS.
 
+## Pretrained weights
+We provide the pretrained weights for models mentioned above in [checkpoints](https://github.com/mims-harvard/UniTS/releases/tag/ckpt).
 
 ## Citation
 
