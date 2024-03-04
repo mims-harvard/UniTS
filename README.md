@@ -1,6 +1,6 @@
 # Unified Time Series Model
 
-[**Project Page**](https://zitniklab.hms.harvard.edu/projects/UniTS/)  |   [**Paper link**]()
+[**Project Page**](https://zitniklab.hms.harvard.edu/projects/UniTS/)  |   [**Paper link**](https://arxiv.org/pdf/2403.00131.pdf)
 
 UniTS is a unified time series model that can process various tasks across multiple domains with shared parameters and does not have any task-specific modules.
 
@@ -113,7 +113,7 @@ We provide the pretrained weights for models mentioned above in [checkpoints](ht
   title={UniTS: Building a Unified Time Series Model},
   author={Gao, Shanghua and Koker, Teddy and Queen, Owen and Hartvigsen, Thomas and Tsiligkaridis, Theodoros and Zitnik, Marinka},
   journal={arXiv},
-  url={},
+  url={https://arxiv.org/pdf/2403.00131.pdf},
   year={2024}
 }
 ```
