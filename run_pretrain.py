@@ -1,6 +1,6 @@
 import argparse
 import torch
-from exp.exp_pretrain import Exp_All_Task_SSL
+from exp.exp_pretrain import Exp_All_Task as Exp_All_Task_SSL
 import random
 import numpy as np
 import wandb
