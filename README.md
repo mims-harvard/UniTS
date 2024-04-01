@@ -60,7 +60,7 @@ bash ./scripts/few_shot_newdata/UniTS_finetune_few_shot_newdata_pct20.sh
 - Prompt tuning
 ```
 # please set the pretrianed model path in the script.
-bash ./scripts/few_shot_newdata/UniTS_finetune_few_shot_newdata_pct20.sh
+bash ./scripts/few_shot_newdata/UniTS_prompt_tuning_few_shot_newdata_pct20.sh
 ```
 
 #### 3. Few-shot transfer learning on anomaly detection tasks:
