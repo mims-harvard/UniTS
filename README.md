@@ -1,6 +1,6 @@
 # Unified Time Series Model
 
-[**Project Page**](https://zitniklab.hms.harvard.edu/projects/UniTS/)  |   [**Paper link**](https://arxiv.org/pdf/2403.00131.pdf)
+[**Project Page**](https://zitniklab.hms.harvard.edu/projects/UniTS/)  |   [**Paper link**](https://arxiv.org/pdf/2403.00131.pdf) **(Neurips 2024)**
 
 UniTS is a unified time series model that can process various tasks across multiple domains with shared parameters and does not have any task-specific modules.
 
