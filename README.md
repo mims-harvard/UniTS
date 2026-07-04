@@ -7,7 +7,7 @@ UniTS is a unified time series model that can process various tasks across multi
 Authors: [Shanghua Gao](https://shgao.site/) [Teddy Koker](https://teddykoker.com) [Owen Queen](https://owencqueen.github.io/) [Thomas Hartvigsen](https://www.tomhartvigsen.com/) [Theodoros Tsiligkaridis](https://sites.google.com/view/theo-t) [Marinka Zitnik](https://zitniklab.hms.harvard.edu/)
 
 ## Overview
-Foundation models, especially LLMs, are profoundly transforming deep learning. Instead of training many task-specific models, we can adapt a single pretrained model to many tasks via few-shot prompting or fine-tuning. However, current foundation models apply to sequence data but not to time series, which present unique challenges due to the inherent diverse and multi-domain time series datasets, diverging task specifications across forecasting, classification and other types of tasks, and the apparent need for task-specialized models.
+Foundation models, especially LLMs, are profoundly transforming deep learning. Instead of training many task-specific models, we can adapt a single pretrained model to many tasks via few-shot prompting or fine-tuning. However, current foundation models apply to sequence data but not to time series, which present unique challenges due to the inherently diverse and multi-domain time series datasets, diverging task specifications across forecasting, classification and other types of tasks, and the apparent need for task-specialised models.
 
 We developed UniTS, a unified time series model that supports a universal task specification, accommodating classification, forecasting, imputation, and anomaly detection tasks. This is achieved through a novel unified network backbone, which incorporates sequence and variable attention along with a dynamic linear operator and is trained as a unified model. 
 
@@ -31,9 +31,9 @@ bash download_data_all.sh
 ```
 Datasets configs for different multi-task settings are shown in `.ymal` files of the `data_provider` folder.
 
-By default, all experiments follow the multi-task setting where one UniTS model is jointly trained on  mulitple datasets.
+By default, all experiments follow the multi-task setting where one UniTS model is jointly trained on  multiple datasets.
 
-### 3. Train and evaluate model
+### 3. Train and evaluate the model
 
 #### 1. Multi-task learning on forecasting and classification tasks:
 
@@ -96,7 +96,7 @@ bash ./scripts/zero_shot/UniTS_forecast_new_length_unify.sh
 
 #### 6. Zero-shot learning on new forecasting datasets:
 ```
-# A special verison of UniTS with shared prompt/mask tokens needs to be trained for this setting.
+# A special version of UniTS with shared prompt/mask tokens needs to be trained for this setting.
 bash ./scripts/zero_shot/UniTS_zeroshot_newdata.sh
 ```
 
@@ -125,7 +125,7 @@ This codebase is built based on the [Time-Series-Library](https://github.com/thu
 
 DISTRIBUTION STATEMENT: Approved for public release. Distribution is unlimited.
 
-This material is based upon work supported by the Under Secretary of Defense for Research and Engineering under Air Force Contract No. FA8702-15-D-0001. Any opinions, findings, conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Under Secretary of Defense for Research and Engineering.
+This material is based upon work supported by the Under Secretary of Defense for Research and Engineering under Air Force Contract No. FA8702-15-D-0001. Any opinions, findings, conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Under Secretary of Defence for Research and Engineering.
 
 © 2024 Massachusetts Institute of Technology.
 
